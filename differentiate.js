@@ -34,7 +34,7 @@ const reduceTerms = arr =>
     ? [].concat(arr[0])
     : arr
 
-const differentiate = eqArr =>
+const differentiateToArrays = eqArr =>
   eqArr
     .map(calcDerivative)
     .map(reduceTerms)
@@ -59,7 +59,7 @@ const substituteX = (eqArr, point) =>
   })
 
 const differentiateAndEval = (eq, point) =>
-  solve(substituteX(differentiate(parseEq(eq)), point))
+  solve(substituteX(differentiateToArrays(parseEq(eq)), point))
 
 module.exports = {
   differentiateAndEval,
@@ -68,7 +68,7 @@ module.exports = {
   splitCoe,
   parseEq,
   calcDerivative,
-  differentiate,
+  differentiateToArrays,
   calcPolyElem,
   reduceTerms,
   solve,
