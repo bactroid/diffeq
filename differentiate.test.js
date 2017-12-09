@@ -83,5 +83,7 @@ test('differentiateAndEval', assert => {
 test('renderEquation', assert => {
   assert.equal(renderEquation([[4, 'x', 1], [3], [0]]), '4x+3', '4x+3')
   assert.equal(renderEquation([[2, 'x', 2]]), '2x^2', '2x^2')
+  assert.equal(renderEquation([[4, 'x', 1], [-3]]), '4x-3', '4x-3')
+  assert.equal(renderEquation([[-2, 'x', 2]]), '-2x^2', '-2x^2')
   assert.end()
 })

@@ -76,6 +76,7 @@ const renderEquation = eqArr =>
       return exp
     })
     .join('+')
+    .replace('+-', '-')
 
 module.exports = {
   differentiateAndEval,
