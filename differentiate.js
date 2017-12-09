@@ -61,6 +61,22 @@ const substituteX = (eqArr, point) =>
 const differentiateAndEval = (eq, point) =>
   solve(substituteX(differentiateToArrays(parseEq(eq)), point))
 
+const renderEquation = eqArr =>
+  eqArr
+    .filter(x => x[0] !== 0)
+    .map(x => {
+      let exp = ''
+      if (x.length === 1) {
+        exp = exp + x[0]
+      } else if (x[2] === 1) {
+        exp = exp + x[0] + x[1]
+      } else {
+        exp = exp + x[0] + x[1] + '^' + x[2]
+      }
+      return exp
+    })
+    .join('+')
+
 module.exports = {
   differentiateAndEval,
   splitEq,
@@ -73,5 +89,6 @@ module.exports = {
   reduceTerms,
   solve,
   substituteX,
-  handleMinus
+  handleMinus,
+  renderEquation
 }

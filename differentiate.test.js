@@ -1,5 +1,5 @@
 const {test} = require('tape')
-const {parseEq, differentiateAndEval, splitEq, splitExp, splitCoe, handleMinus, calcDerivative, reduceTerms, differentiateToArrays, calcPolyElem, solve, substituteX} = require('./differentiate')
+const {parseEq, differentiateAndEval, splitEq, splitExp, splitCoe, handleMinus, calcDerivative, reduceTerms, differentiateToArrays, calcPolyElem, solve, substituteX, renderEquation} = require('./differentiate')
 
 test('parseEq', assert => {
   assert.deepEqual(parseEq('3x+2'), [['3', 'x'], ['2', '']], '3x+2')
@@ -77,5 +77,11 @@ test('differentiateAndEval', assert => {
   assert.equal(differentiateAndEval('x^2-3x-1', 5), 7, 'x^2-3x-1')
   assert.equal(differentiateAndEval('-x^2+3x-3', 1234567908), -2469135813, '-x^2+3x-3')
   assert.equal(differentiateAndEval('-7x^5+22x^4-55x^3-94x^2+87x-56', -3), -6045, '-7x^5+22x^4-55x^3-94x^2+87x-56')
+  assert.end()
+})
+
+test('renderEquation', assert => {
+  assert.equal(renderEquation([[4, 'x', 1], [3], [0]]), '4x+3', '4x+3')
+  assert.equal(renderEquation([[2, 'x', 2]]), '2x^2', '2x^2')
   assert.end()
 })
