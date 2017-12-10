@@ -18,7 +18,7 @@ All strings are assumed to be an expression set equal to `y`.
 `^` is used to represent exponents. For example, `'2x^2'` represents 2x
 squared.
 
-## differentiateAndEval(equation, value)
+## `differentiateAndEval(equation, value)`
 
 Function takes a string representation of a simple function, differentiates,
 and returns an evaluation of numeric value of `y` based on the given value for
