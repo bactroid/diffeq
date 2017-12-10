@@ -1,4 +1,4 @@
-# differentiate
+# diffeq
 
 Library to differentiate string representations of equations.
 
