@@ -78,6 +78,9 @@ const renderEquation = eqArr =>
     .join('+')
     .replace('+-', '-')
 
+const differentiate = eq =>
+  renderEquation(differentiateToArrays(parseEq(eq)))
+
 module.exports = {
   differentiateAndEval,
   splitEq,
@@ -91,5 +94,6 @@ module.exports = {
   solve,
   substituteX,
   handleMinus,
-  renderEquation
+  renderEquation,
+  differentiate
 }
