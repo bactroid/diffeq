@@ -1,6 +1,6 @@
 {
   "name": "diffeq",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Library to differentiate string representations of equations",
   "main": "diffeq.js",
   "scripts": {
