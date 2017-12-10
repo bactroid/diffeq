@@ -1,5 +1,5 @@
 {
-  "name": "differentiate",
+  "name": "diffeq",
   "version": "1.0.0",
   "description": "Library to differentiate string representations of equations",
   "main": "differentiate.js",
@@ -15,10 +15,10 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bactroid/differentiate.git"
+    "url": "git+https://github.com/bactroid/diffeq.git"
   },
   "bugs": {
-    "url": "https://github.com/bactroid/differentiate/issues"
+    "url": "https://github.com/bactroid/diffeq/issues"
   },
-  "homepage": "https://github.com/bactroid/differentiate#readme"
+  "homepage": "https://github.com/bactroid/diffeq#readme"
 }
