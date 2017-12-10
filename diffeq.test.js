@@ -1,5 +1,5 @@
 const {test} = require('tape')
-const {parseEq, differentiateAndEval, splitEq, splitExp, splitCoe, handleMinus, calcDerivative, reduceTerms, differentiateToArrays, calcPolyElem, solve, substituteX, renderEquation, differentiate} = require('./differentiate')
+const {parseEq, differentiateAndEval, splitEq, splitExp, splitCoe, handleMinus, calcDerivative, reduceTerms, differentiateToArrays, calcPolyElem, solve, substituteX, renderEquation, differentiate} = require('./diffeq')
 
 test('parseEq', assert => {
   assert.deepEqual(parseEq('3x+2'), [['3', 'x'], ['2', '']], '3x+2')

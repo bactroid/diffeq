@@ -2,9 +2,9 @@
   "name": "diffeq",
   "version": "1.0.0",
   "description": "Library to differentiate string representations of equations",
-  "main": "differentiate.js",
+  "main": "diffeq.js",
   "scripts": {
-    "test": "node differentiate.test.js"
+    "test": "node diffeq.test.js"
   },
   "keywords": [],
   "author": "Kate Haskell <fuzzcat@bactroid.net> (http://bactroid.net)",
