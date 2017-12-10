@@ -31,5 +31,5 @@ squared.
 
 # Contribution
 
-Pull requests are always welcome. Code will only be expected with appropriate
+Pull requests are always welcome. Code will only be accepted with appropriate
 unit tests.
